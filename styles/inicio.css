@@ -1,0 +1,167 @@
+#header{
+    width: 99vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+header{
+    position: fixed;
+}
+
+#nav{
+    width: 99vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+nav{
+    position: fixed;
+    margin-top: 10vh;
+}
+
+main{
+    height: 195vh;
+}
+
+.imagenprincipal>img{
+    width: 99.2vw;
+    height: auto;
+}
+.imagenprincipalmovil{
+    visibility: hidden;
+    display: none;
+}
+.flecha_abajo{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    margin-top: 85vh;
+    margin-left: 49vw;
+    animation-name: abajo;  
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes abajo {
+    0%   {left:0px; top:0px;}
+    100% {left:0px; top:15px;}  
+}
+
+.escuchar{
+    display: flex;
+    width: 20vw;
+    margin: auto;
+}
+
+.spotify{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+}
+    
+.spotify:hover { 
+    opacity: 0.3; 
+}
+
+.youtube { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+    margin-left: 0.5vw;
+} 
+    
+.youtube:hover { 
+    opacity: 0.3; 
+}
+
+section{
+    display: flex;
+}
+
+article{
+    width: 50vw;
+}
+
+article>h2{
+    text-align: center;
+    margin-top: 7vh;
+}
+
+article>h3{
+    text-align: center;
+    letter-spacing: 2px;
+}
+article>p{
+    text-align: center;
+}
+
+article>figure{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.redes{ 
+    border: 1px solid white;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+    text-decoration: none;
+}
+.redes:hover{ 
+    opacity: 0.6; 
+    border: 1px solid var(--color-principal-);
+}
+
+@media screen and (max-width : 768px){
+    .imagenprincipal>img{
+        visibility: hidden;
+    }
+    .imagenprincipalmovil{
+        visibility: visible;
+        display:block;
+    }
+    .imagenprincipalmovil>img{
+        width: 100vw;
+        margin-top: -42vh;
+    }
+    .flecha_abajo{
+        margin-left: 45vw;
+    }
+    main{
+        width: 100vw;
+    }
+    section{
+        display: block;
+    }
+    article{
+        width: 100vw;
+    }
+    article>figure>img{
+        width: 60vw;
+    }
+    article>p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .escuchar{
+        display: flex;
+        margin: auto;
+    }
+    .redes{ 
+        width: 50vw;
+        height: 5vh;
+    }
+    .flecha_abajo{
+        margin-top: 60vh;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1200px){
+    
+}

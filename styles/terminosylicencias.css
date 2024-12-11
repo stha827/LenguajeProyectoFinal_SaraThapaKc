@@ -1,0 +1,11 @@
+main{
+    text-align: center;
+}
+
+main>h2{
+   margin: 2vw;
+}
+
+main>p{
+    margin: 1vw;
+}

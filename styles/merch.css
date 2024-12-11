@@ -1,0 +1,123 @@
+:root{
+    --color-principal-: #655ec9;
+}
+
+main {
+    height: 130vh;
+}
+
+figure {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+figure>img{
+    width: 27vw;
+}
+
+.partearriba{
+    display: flex;
+}
+
+.partearriba>article {
+    width: 33.3vw;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.partearriba>article>section>img{
+    width: 27vw;
+}
+
+.partearriba>article>figure>a {
+    position: absolute;
+    display: none;
+    background-color: var(--color-principal-);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.partearriba>article>figure:hover>a {
+    display: block;
+}
+
+.partearriba>article>p {
+    text-align: center;
+}
+
+.parteabajo{
+    margin-top: 8vh;
+    display: flex;
+}
+
+.parteabajo>article {
+    width: 33.3vw;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteabajo>article>figure>img {
+    width: 27vw;
+}
+
+.parteabajo>article>figure>a {
+    position: absolute;
+    display: none;
+    background-color: var(--color-principal-);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.parteabajo>article>figure:hover>a {
+    display: block;
+}
+
+.partearriba>article>p {
+    text-align: center;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
+
+.parteabajo>article>p {
+    text-align: center;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
+
+@keyframes cambiarColor {
+    0% { color: var(--color-principal-); }
+    100% { color: #ffffff; }
+}
+
+.comprar{
+    background-color: var(--color-principal-);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.comprar:hover{
+    background-color: #262266;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    display: block;
+    height: 10vh;
+}
+footer>p>a{
+    color: rgb(96, 96, 96);
+}

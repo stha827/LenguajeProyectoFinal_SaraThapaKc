@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chase Atlantic | Inicio </title>
+    <link rel="stylesheet" href="./styles/styles.css"> 
+    <link rel="stylesheet" href="./styles/inicio.css">
+    <link rel="icon" href="./img/CA_favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&family=Pacifico&family=Rubik:ital,wght@0,391;1,391&family=Squada+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <img src="img/logo.png"> 
+    </header>
+    <nav id="nav">
+        <p> <a href="./index.html"> Inicio </a> </p>
+        <p> <a href="./historia.html">Historia </a> </p>
+        <p> <a href="./conciertos.html"> Conciertos </a> </p>
+        <p> <a href="./discografia.html"> Discografía </a> </p>
+        <p> <a href="./merch.html"> Merchandising </a> </p>
+        <p> <a href="./contacto.html"> Contacto </a> </p>
+    </nav>
+    <script>
+        var lastScrollTop = 0;
+    
+        window.onscroll = function() {
+            var nav = document.getElementById("nav");
+            var header = document.getElementById("header");
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    
+            if (scrollTop > 200) {
+                header.style.visibility = "visible";
+                header.style.opacity = "1";
+                nav.style.visibility = "visible";
+                nav.style.opacity = "1";
+            } else {
+                header.style.visibility = "hidden";
+                header.style.opacity = "0";
+                nav.style.visibility = "hidden";
+                nav.style.opacity = "0";
+            }
+    
+            lastScrollTop = scrollTop;
+        };
+        document.getElementById("header").style.visibility = "hidden";
+        document.getElementById("header").style.opacity = "0";
+        document.getElementById("nav").style.visibility = "hidden";
+        document.getElementById("nav").style.opacity = "0";
+    </script>
+    
+    
+    <main>
+        <figure class="imagenprincipal">
+            <img src="./img/inicio/principal.webp">
+        </figure>
+        <figure class="imagenprincipalmovil">
+            <img src="./img/inicio/principal_movil.jpg">
+        </figure>
+        <figure class="flecha_abajo">
+            <img src="./img/inicio/flecha_abajo.gif" width="50px">
+        </figure>
+       <section>
+            <article>
+                <h2> Últimos lanzamientos </h2>
+                <br><br><h3> Lost In Heaven </h3> <br>
+                <figure>
+                    <img src="./img/inicio/lost_in_heaven.gif" width="400vw">
+                </figure>
+                <br>
+                <div class="escuchar">
+                    <a href="https://open.spotify.com/intl-es/album/6fCGW5OWBTrtesYXjEze3h?si=ZipWQmXLTi6rQZtBVubP6g" class="spotify"> <img src="./img/inicio/logos/spotify_logo.png" width="40px"></img></a>
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_lrTjfGpdxmxylXAjL8J2NViOvZROWwtCY&si=hOE2jRhAvtBkhoZ2" class="youtube">  <img src="./img/inicio/logos/youtube_music_logo.png" width="40px"></img></a>
+                </div>
+                <br><br>
+            </article>
+            <article>
+                <h2> Redes Sociales </h2>
+                <br><p> Sigue a Chase Atlantic en sus redes sociales para no perderte sus últimas novedades </p>
+                <br><br><a href="https://www.instagram.com/chaseatlantic/" class="redes"> <img src="./img/inicio/logos/instagram_logo.webp" width="30px">  &nbsp &nbsp Instagram</a>
+                <br><br><a href="https://x.com/ChaseAtlantic" class="redes"> <img src="./img/inicio/logos/twitter_logo.webp" width="45px">  &nbsp &nbsp X (Twitter) </a>
+                <br><br><a href="https://www.tiktok.com/@chaseatlantic?lang=es" class="redes"> <img src="./img/inicio/logos/tiktok_logo.webp" width="45px">  &nbsp &nbsp TikTok </a>
+                <br><br><a href="https://www.facebook.com/ChaseAtlantic/" class="redes"> <img src="./img/inicio/logos/facebook_logo.webp" width="30px">  &nbsp &nbsp Facebook </a>
+                <br><br><a href="https://www.youtube.com/@chaseatlantic" class="redes"> <img src="./img/inicio/logos/youtube_logo.png" width="30px">  &nbsp &nbsp Youtube</a>
+                <br><br><a href="https://open.spotify.com/artist/7cYEt1pqMgXJdq00hAwVpT?si=bvAVIC0hSOqRR0qarDGptQ" class="redes"> <img src="./img/inicio/logos/spotify_logo.png" width="30px">  &nbsp &nbsp Spotify</a>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p> © Sara Thapa Kc </p>
+    </footer>
+</body>
+</html>

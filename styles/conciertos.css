@@ -1,0 +1,84 @@
+:root{
+    --color-principal-: #655ec9;
+}
+
+.maininterno{
+    display: flex;
+}
+section{
+    width: 50vw;
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+section>h1{
+    text-align: center;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
+
+@keyframes cambiarColor {
+    0% { color: var(--color-principal-); }
+    100% { color: #ffffff; }
+}
+
+div{
+    margin-top: 3vh;
+}
+article{
+    display: flex;
+    height: 15vh;
+    width: 48vw;
+    border-bottom: 1px solid var(--color-principal-);
+    border-top: 1px solid var(--color-principal-);
+}
+article>aside>h3{
+    width: 20vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    color: var(--color-principal-);
+}
+article>aside>h3:hover{
+    color: white;
+}
+
+article>aside>p{
+    width: 20vw;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+article>aside>p:hover{
+    color: var(--color-principal-);
+}
+
+article>a>img{
+    width: 1.5vw;
+    height: 3vh;
+    margin-top: 5.5vh;
+    margin-left: 2vw;
+    filter: invert(1); 
+    align-items: center;
+    justify-content: center;
+}
+article>a>img:hover{
+    
+}
+.comprartickets{
+    background-color: var(--color-principal-);
+    color: white;
+    width: 10vw;
+    margin: 4vh;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+    
+.comprartickets:hover{
+    background-color: #262266;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}

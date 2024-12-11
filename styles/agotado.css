@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 120px;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
+
+h2{
+    font-size: 50px;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
+
+@keyframes cambiarColor {
+    0% { color: #655ec9; }
+    100% { color: #ffffff; }
+}
