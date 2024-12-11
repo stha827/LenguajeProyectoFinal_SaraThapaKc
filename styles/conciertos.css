@@ -31,27 +31,24 @@ article{
     border-bottom: 1px solid var(--color-principal-);
     border-top: 1px solid var(--color-principal-);
 }
-article>aside>h3{
+.futuro>aside>h3{
     width: 20vw;
     margin-top: 2vh;
     margin-left: 2vw;
     color: var(--color-principal-);
 }
-article>aside>h3:hover{
-    color: white;
-}
 
-article>aside>p{
+.futuro>aside>p{
     width: 20vw;
     margin-top: 1vh;
     margin-left: 2vw;
 }
 
-article>aside>p:hover{
+.futuro>aside>p:hover{
     color: var(--color-principal-);
 }
 
-article>a>img{
+.futuro>a>img{
     width: 1.5vw;
     height: 3vh;
     margin-top: 5.5vh;
@@ -60,10 +57,10 @@ article>a>img{
     align-items: center;
     justify-content: center;
 }
-article>a>img:hover{
-    
+.futuro>a>img:hover{
+    transform: rotate(-45deg);
 }
-.comprartickets{
+.botonestilo{
     background-color: var(--color-principal-);
     color: white;
     width: 10vw;
@@ -76,9 +73,65 @@ article>a>img:hover{
 
 }
     
-.comprartickets:hover{
+.botonestilo:hover{
     background-color: #262266;
     color: black;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.pasado>aside>h3{
+    width: 30vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    color: var(--color-principal-);
+}
+
+.pasado>aside>p{
+    width: 20vw;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+.pasado>aside>p:hover{
+    color: var(--color-principal-);
+}
+
+@media (max-width: 768px) {
+    .maininterno {
+        flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+    }
+
+    section {
+        width: 90vw; /* Ajustar el ancho para pantallas pequeñas */
+        margin-left: 5vw; /* Ajustar margen para pantallas pequeñas */
+    }
+
+    article {
+        flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+        width: 90vw; /* Ajustar el ancho para pantallas pequeñas */
+    }
+
+    .futuro > aside > h3,
+    .pasado > aside > h3 {
+        width: 100%; /* Ajustar ancho para pantallas pequeñas */
+        margin-left: 0; /* Eliminar margen izquierdo para pantallas pequeñas */
+    }
+
+    .futuro > aside > p,
+    .pasado > aside > p {
+        width: 100%; /* Ajustar ancho para pantallas pequeñas */
+        margin-left: 0; /* Eliminar margen izquierdo para pantallas pequeñas */
+    }
+
+    .futuro > a > img {
+        width: 50%; /* Ajustar el tamaño de la imagen para pantallas pequeñas */
+        height: auto; /* Mantener la proporción de la imagen */
+        margin-left: 0; /* Eliminar margen izquierdo para pantallas pequeñas */
+    }
+
+    .botonestilo {
+        width: 80%; /* Ajustar el ancho del botón para pantallas pequeñas */
+        margin: 4vh auto; /* Centrar el botón */
+    }
 }

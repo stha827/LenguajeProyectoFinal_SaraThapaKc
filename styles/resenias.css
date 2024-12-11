@@ -1,0 +1,50 @@
+:root{
+    --color-principal-: #655ec9;
+}
+
+.maininterno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+label{
+    font-size: 30px;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+form>section>input{
+    width: 15vw;
+}
+input{
+    background-color: white;
+    border: 0.1vw solid rgb(186, 191, 196);
+    color: var(--color-principal-);
+    height: 1.2vw;
+    margin-bottom: 1.5vh;
+    width: 25vw;
+    text-align: center;
+}
+select{
+    background-color: white;
+    border: 0.1vw solid rgb(186, 191, 196);
+    color: var(--color-principal-);
+    height: 1.2vw;
+    margin-bottom: 1.5vh;
+    width: 25vw;
+    text-align: center;
+}
+select>option{
+    background-color: black;
+    border: 1px solid rgb(186, 191, 196);
+    color: var(--color-principal-);
+    height: 1.2vw;
+    margin-bottom: 1.5vh;
+    width: 25vw;
+}
