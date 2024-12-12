@@ -31,12 +31,6 @@ article>form>label{
   align-items: center;
 }
 
-.partearriba>article{
-  width: 100vw;
-  border-radius: 25px;
-  margin-top: 2vw;
-}
-
 .partearriba>article>form>section>article>input{
   margin-top: 0.5vh;
   width: 15vw;
@@ -79,14 +73,11 @@ article>form>label{
   margin-top: 2vw;
   align-items: center;
   justify-items: center;
-}
-
-.parteabajo>article>form{
   text-align: center;
 }
 
-.parteabajo>article>form>textarea{
-  margin-top: 2vh;
+.parteabajo>article>textarea{
+  margin-top: 1vh;
   font-size: 16px;
   color:var(--color-principal-);
 }
@@ -124,3 +115,46 @@ article>form>label{
 .sugerencias{
   margin: 1.5vw;
 }
+
+/* Estilos responsive */
+@media (max-width: 1200px) {
+  /* Ajustes para dispositivos móviles y tablets */
+  main{
+    width: 100%;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  .partearriba>article>form>section>article>input {
+    width: 80%;
+  }
+
+  .partearriba>article>form>section>article {
+    width: 80%;
+  }
+
+  .partearriba>article {
+    width: 90%;
+  }
+
+  .parteabajo>article>textarea {
+    width: 80%;
+    height: 120px;
+  }
+
+  .boton {
+    width: 80%;
+  }
+
+  /* Ajusta el texto de los labels */
+  article>form>label {
+    font-size: 18px;
+  }
+}
+

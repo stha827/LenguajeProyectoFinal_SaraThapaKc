@@ -23,8 +23,8 @@ nav{
 
 /* Estilo del contenido principal */
 main{
-    height: 200vh;
-    width: 99.3vw;
+    height: 100%;
+    width: 100%;
 }
 
 /* Estilo de la imagen principal */
@@ -148,13 +148,14 @@ article>figure{
     }
     .imagenprincipalmovil>img{
         width: 100vw;
-        margin-top: -42vh;
+        margin-top: -32vh;
     }
     .flecha_abajo{
         margin-left: 45vw;
     }
     main{
         width: 100vw;
+        height: 100%;
     }
     section{
         display: block;
@@ -178,11 +179,41 @@ article>figure{
         height: 5vh;
     }
     .flecha_abajo{
-        margin-top: 60vh;
+        margin-top: 60%;
     }
 }
 
 /* Estilo responsivo para pantallas entre 768px y 1200px */
 @media screen and (min-width : 768px) and (max-width : 1200px){
-    
+    .flecha_abajo{
+        margin-left: 45vw;
+    }
+    main{
+        width: 100vw;
+        height: 100%;
+    }
+    section{
+        display: block;
+    }
+    article{
+        width: 100vw;
+    }
+    article>figure>img{
+        width: 60vw;
+    }
+    article>p{
+        text-align: center;
+        font-size: 30px;
+    }
+    .escuchar{
+        display: flex;
+        margin: auto;
+    }
+    .redes{ 
+        width: 50vw;
+        height: 5vh;
+    }
+    .flecha_abajo{
+        margin-top: 40%;
+    }
 }

@@ -114,86 +114,58 @@ article{
 
 @media (max-width: 768px) {
     main{
-        height: 170vh;
+        width: 97.97%;
+        height: 100%;
     }
-    /* Ajuste de la sección principal interna para pantallas pequeñas */
+
+    header{
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+    }
+    
     .maininterno {
         flex-direction: column;
         align-items: center;
         padding: 0 2vw;
     }
 
-    /* Ajuste de las secciones para pantallas pequeñas */
     section {
         width: 90%;
-        margin: 2vh 0;
     }
 
-    /* Ajuste de los artículos para pantallas pequeñas */
+
     article {
-        flex-direction: column;
         width: 90%;
-        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    /* Ajuste de los títulos y párrafos para eventos futuros y pasados en pantallas pequeñas */
-    .futuro > aside > h3,
-    .pasado > aside > h3 {
-        width: 100%;
-        margin-left: 0;
-        text-align: center; /* Asegura que los títulos se centren en dispositivos pequeños */
+
+    .futuro>a>img {
+        width: 4vw;
+        height: 3.5vh;
+        margin-top: 0vh;
     }
 
-    .futuro > aside > p,
-    .pasado > aside > p {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    /* Ajuste de las imágenes de enlaces para pantallas pequeñas */
-    .futuro > a > img {
-        width: 25vw; /* Asegura que las imágenes sean más grandes en dispositivos móviles */
-        height: auto;
-        margin-left: 0;
-        margin-top: 2vh;
-    }
-
-    /* Ajuste de los botones para pantallas pequeñas */
     .botonestilo {
-        width: 80%;
-        margin: 2vh auto;
+        width: 30%;
+        text-align: center;
+        height: 5vh;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1200px){
+    .botonestilo {
+        font-size: 16px;
         text-align: center;
     }
-
-    /* Ajuste de los márgenes en los artículos */
-    article.futuro, article.pasado {
-        margin-bottom: 3vh;
-    }
-
-    /* Ajuste del tamaño del logo en el header */
-    header img {
-        width: 60%; /* Hace que el logo ocupe un porcentaje razonable en pantallas pequeñas */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    /* Ajustes generales en el menú de navegación para pantallas pequeñas */
-    nav {
-        width: 100%;
-        text-align: center;
-        margin-top: 2vh;
-    }
-
-    nav p {
-        display: inline-block;
-        margin-right: 2vw;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: inherit;
+    .futuro>a>img {
+        width: 2vw;
+        height: 2vh;
     }
 }
 

@@ -29,6 +29,7 @@ header>img{
 }
 
 /* Estilo de la navegación */
+
 nav{
     align-items: center;
     display: flex;
@@ -42,8 +43,10 @@ nav{
 }
 nav>p{
     width: 8vw;
-    flex-shrink: 0;
+    font-size: 1em; 
+    padding: 0 1vw;
 }
+
 nav>p>a{
     color: inherit;
     text-decoration: inherit;
@@ -103,26 +106,3 @@ html {
     }
 }
 
-/* Estilos responsivos para pantallas entre 768px y 1200px */
-@media screen and (min-width : 768px) and (max-width : 1200px){
-    header>img{ 
-        height: auto;
-        width: 25vw;
-    }
-    nav{
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        height: 5vh;
-        background-color: rgb(5, 5, 5);
-    }
-    nav>p{
-        width: auto;
-        font-size: 1em; 
-        padding: 0 30px;
-    }
-    nav>p>a{
-        color: inherit;
-        text-decoration: inherit;
-    }
-}

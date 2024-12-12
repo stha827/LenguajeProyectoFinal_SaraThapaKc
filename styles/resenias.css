@@ -1,50 +1,161 @@
+/* Variables CSS */
 :root{
     --color-principal-: #655ec9;
-}
-
-.maininterno{
+  }
+  
+  /* Diseño general del main interno */
+  .maininterno{
     display: flex;
+    flex-direction: column;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
-}
-
-h1{
-    text-align: center;
-    font-size: 50px;
-}
-
-label{
-    font-size: 30px;
-    margin-left: 2vw;
-    text-align: center;
-}
-
-form>section>input{
+  }
+  
+  /* Diseño de la letra del formulario */
+  article>form>label{
+      font-size: 20px;
+    }
+  
+  /* Diseño de la parte de arriba del main interno */
+  .partearriba{
+    display: flex;
+    width: 80vw;
+    height: 35.25vh;
+  }
+  
+  .partearriba>article{
+    width: 100vw;
+    border-radius: 25px;
+    margin-top: 2vw;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .partearriba>article>form>section>article>input{
+    margin-top: 0.5vh;
     width: 15vw;
-}
-input{
-    background-color: white;
-    border: 0.1vw solid rgb(186, 191, 196);
-    color: var(--color-principal-);
-    height: 1.2vw;
-    margin-bottom: 1.5vh;
-    width: 25vw;
     text-align: center;
-}
-select{
-    background-color: white;
-    border: 0.1vw solid rgb(186, 191, 196);
+    color:var(--color-principal-);
+    height: 2vh;
+    border: 0px;
+    border-bottom: 2px solid var(--color-principal-);
     color: var(--color-principal-);
-    height: 1.2vw;
-    margin-bottom: 1.5vh;
-    width: 25vw;
-    text-align: center;
-}
-select>option{
     background-color: black;
-    border: 1px solid rgb(186, 191, 196);
-    color: var(--color-principal-);
-    height: 1.2vw;
-    margin-bottom: 1.5vh;
+    margin-top: 1.5vw;
+    font-size: 16px;
+  }
+  
+  .partearriba>article>form>section>article>label{
+    font-size: 20px;
+  }
+  
+  .partearriba>article>form>section>article{
     width: 25vw;
-}
+  }
+  
+  .partearriba>article>form>section{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .partearriba>article>form{
+    text-align: center;
+  }
+  
+  #recopilardatos{
+    width: 1vw;
+  }
+  
+  /* Diseño de la parte de abajo del main interno */
+  .parteabajo>article{
+    border-radius: 25px;
+    margin-top: 2vw;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .parteabajo>article>textarea{
+    margin-top: 1vh;
+    font-size: 16px;
+    color:var(--color-principal-);
+  }
+  
+  /* Diseño de los botones */
+  .boton{
+    background-color: var(--color-principal-);
+    color: white;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .boton:hover{
+    background-color: #262266;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  /* Diseño de cada tipo de recopilación de datos */
+  .datospersonales{
+    margin: 1vw;
+  }
+  
+  .aficiones{
+    margin: 1.5vw;
+  }
+  
+  .preguntas{
+    margin: 1vw;
+  }
+  
+  .sugerencias{
+    margin: 1.5vw;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 1200px) {
+    /* Ajustes para dispositivos móviles y tablets */
+    main{
+      width: 100%;
+    }
+  
+    header{
+      width: 100%;
+    }
+  
+    nav{
+      width: 100%;
+    }
+  
+    .partearriba>article>form>section>article>input {
+      width: 80%;
+    }
+  
+    .partearriba>article>form>section>article {
+      width: 80%;
+    }
+  
+    .partearriba>article {
+      width: 90%;
+    }
+  
+    .parteabajo>article>textarea {
+      width: 80%;
+      height: 120px;
+    }
+  
+    .boton {
+      width: 80%;
+    }
+  
+    /* Ajusta el texto de los labels */
+    article>form>label {
+      font-size: 18px;
+    }
+  }
+  
+  
