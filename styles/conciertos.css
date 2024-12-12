@@ -1,29 +1,38 @@
+/* Variables de color para el sitio */
 :root{
     --color-principal-: #655ec9;
 }
 
+/* Estilo de la sección principal interna */
 .maininterno{
     display: flex;
 }
+
+/* Estilo de las secciones generales */
 section{
     width: 50vw;
     margin-top: 3vh;
     margin-left: 2vw;
 }
+
 section>h1{
     text-align: center;
     animation-duration: 5s;
     animation: cambiarColor 3s forwards;
 }
 
+/* Animación de cambio de color del texto */
 @keyframes cambiarColor {
     0% { color: var(--color-principal-); }
     100% { color: #ffffff; }
 }
 
+/* Margen superior para los contenedores div */
 div{
     margin-top: 3vh;
 }
+
+/* Estilo de los artículos */
 article{
     display: flex;
     height: 15vh;
@@ -31,6 +40,8 @@ article{
     border-bottom: 1px solid var(--color-principal-);
     border-top: 1px solid var(--color-principal-);
 }
+
+/* Estilo de los títulos y párrafos en la sección de eventos futuros */
 .futuro>aside>h3{
     width: 20vw;
     margin-top: 2vh;
@@ -48,6 +59,7 @@ article{
     color: var(--color-principal-);
 }
 
+/* Estilo de los enlaces de eventos futuros */
 .futuro>a>img{
     width: 1.5vw;
     height: 3vh;
@@ -57,9 +69,12 @@ article{
     align-items: center;
     justify-content: center;
 }
+
 .futuro>a>img:hover{
     transform: rotate(-45deg);
 }
+
+/* Estilo de los botones */
 .botonestilo{
     background-color: var(--color-principal-);
     color: white;
@@ -70,7 +85,6 @@ article{
     align-items: center;
     display: flex;
     justify-content: center;
-
 }
     
 .botonestilo:hover{
@@ -80,6 +94,7 @@ article{
     text-decoration: none;
 }
 
+/* Estilo de los títulos y párrafos en la sección de eventos pasados */
 .pasado>aside>h3{
     width: 30vw;
     margin-top: 2vh;
@@ -98,40 +113,87 @@ article{
 }
 
 @media (max-width: 768px) {
+    main{
+        height: 170vh;
+    }
+    /* Ajuste de la sección principal interna para pantallas pequeñas */
     .maininterno {
-        flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2vw;
     }
 
+    /* Ajuste de las secciones para pantallas pequeñas */
     section {
-        width: 90vw; /* Ajustar el ancho para pantallas pequeñas */
-        margin-left: 5vw; /* Ajustar margen para pantallas pequeñas */
+        width: 90%;
+        margin: 2vh 0;
     }
 
+    /* Ajuste de los artículos para pantallas pequeñas */
     article {
-        flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
-        width: 90vw; /* Ajustar el ancho para pantallas pequeñas */
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0;
     }
 
+    /* Ajuste de los títulos y párrafos para eventos futuros y pasados en pantallas pequeñas */
     .futuro > aside > h3,
     .pasado > aside > h3 {
-        width: 100%; /* Ajustar ancho para pantallas pequeñas */
-        margin-left: 0; /* Eliminar margen izquierdo para pantallas pequeñas */
+        width: 100%;
+        margin-left: 0;
+        text-align: center; /* Asegura que los títulos se centren en dispositivos pequeños */
     }
 
     .futuro > aside > p,
     .pasado > aside > p {
-        width: 100%; /* Ajustar ancho para pantallas pequeñas */
-        margin-left: 0; /* Eliminar margen izquierdo para pantallas pequeñas */
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
     }
 
+    /* Ajuste de las imágenes de enlaces para pantallas pequeñas */
     .futuro > a > img {
-        width: 50%; /* Ajustar el tamaño de la imagen para pantallas pequeñas */
-        height: auto; /* Mantener la proporción de la imagen */
-        margin-left: 0; /* Eliminar margen izquierdo para pantallas pequeñas */
+        width: 25vw; /* Asegura que las imágenes sean más grandes en dispositivos móviles */
+        height: auto;
+        margin-left: 0;
+        margin-top: 2vh;
     }
 
+    /* Ajuste de los botones para pantallas pequeñas */
     .botonestilo {
-        width: 80%; /* Ajustar el ancho del botón para pantallas pequeñas */
-        margin: 4vh auto; /* Centrar el botón */
+        width: 80%;
+        margin: 2vh auto;
+        text-align: center;
+    }
+
+    /* Ajuste de los márgenes en los artículos */
+    article.futuro, article.pasado {
+        margin-bottom: 3vh;
+    }
+
+    /* Ajuste del tamaño del logo en el header */
+    header img {
+        width: 60%; /* Hace que el logo ocupe un porcentaje razonable en pantallas pequeñas */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Ajustes generales en el menú de navegación para pantallas pequeñas */
+    nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    nav p {
+        display: inline-block;
+        margin-right: 2vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: inherit;
     }
 }
+
