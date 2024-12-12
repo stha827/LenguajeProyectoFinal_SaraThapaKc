@@ -1,15 +1,19 @@
+/* Estilo global */
 *{
     margin: 0;
     padding: 0;
     font-family: "Squada One", serif;
     font-weight: 400;
     font-style: normal;
-    color:white;
+    color: white;
 }
+
+/* Variables de color */
 :root{
     --color-principal-: #655ec9;
 }
 
+/* Estilo del encabezado */
 header{
     height: 10vh;
     background-color: rgb(32, 0, 72);
@@ -24,6 +28,7 @@ header>img{
     width: 15vw;
 }
 
+/* Estilo de la navegación */
 nav{
     align-items: center;
     display: flex;
@@ -43,16 +48,19 @@ nav>p>a{
     color: inherit;
     text-decoration: inherit;
 }
-
 nav>p>a:hover{
     color: var(--color-principal-);
     text-decoration: underline;
 }
+
+/* Estilo del contenido principal */
 main{
     width: 100vw;
     height: 78vh;
     background-color: black;
 }
+
+/* Estilo del pie de página */
 footer{
     background-color: rgb(17, 17, 17);
     height: 7vh;
@@ -64,11 +72,13 @@ footer>p{
     color: rgb(67, 67, 67);
 }
 
+/* Estilos de la barra de desplazamiento */
 html {
     scrollbar-width: thin; 
     scrollbar-color: #d8d8d8 #2f0056; 
 }
 
+/* Estilos responsivos para pantallas de menos de 768px */
 @media screen and (max-width : 768px){
     header>img{ 
         height: auto;
@@ -93,6 +103,7 @@ html {
     }
 }
 
+/* Estilos responsivos para pantallas entre 768px y 1200px */
 @media screen and (min-width : 768px) and (max-width : 1200px){
     header>img{ 
         height: auto;

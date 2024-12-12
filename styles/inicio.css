@@ -1,5 +1,6 @@
+/* Estilo de visibilidad y transición del encabezado */
 #header{
-    width: 99vw;
+    width: 99.3vw;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s, opacity 0.5s;
@@ -8,8 +9,9 @@ header{
     position: fixed;
 }
 
+/* Estilo de visibilidad y transición de la navegación */
 #nav{
-    width: 99vw;
+    width: 99.3vw;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s, opacity 0.5s;
@@ -19,18 +21,25 @@ nav{
     margin-top: 10vh;
 }
 
+/* Estilo del contenido principal */
 main{
-    height: 195vh;
+    height: 200vh;
+    width: 99.3vw;
 }
 
+/* Estilo de la imagen principal */
 .imagenprincipal>img{
     width: 99.2vw;
     height: auto;
 }
+
+/* Estilo de la imagen principal en móviles */
 .imagenprincipalmovil{
     visibility: hidden;
     display: none;
 }
+
+/* Estilo de la flecha hacia abajo */
 .flecha_abajo{
     display: flex; 
     justify-content: center; 
@@ -42,17 +51,21 @@ main{
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
+
+/* Animación de la flecha hacia abajo */
 @keyframes abajo {
     0%   {left:0px; top:0px;}
     100% {left:0px; top:15px;}  
 }
 
+/* Estilo del contenedor de los enlaces de escucha */
 .escuchar{
     display: flex;
     width: 20vw;
     margin: auto;
 }
 
+/* Estilo del enlace a Spotify */
 .spotify{ 
     display: flex; 
     justify-content: center; 
@@ -64,6 +77,7 @@ main{
     opacity: 0.3; 
 }
 
+/* Estilo del enlace a YouTube */
 .youtube { 
     display: flex; 
     justify-content: center; 
@@ -76,10 +90,12 @@ main{
     opacity: 0.3; 
 }
 
+/* Estilo de la sección */
 section{
     display: flex;
 }
 
+/* Estilo del artículo */
 article{
     width: 50vw;
 }
@@ -102,6 +118,8 @@ article>figure{
     display: flex;
     justify-content: center;
 }
+
+/* Estilo de los enlaces a redes sociales */
 .redes{ 
     border: 1px solid white;
     width: 20vw;
@@ -113,11 +131,13 @@ article>figure{
     margin: auto; 
     text-decoration: none;
 }
+
 .redes:hover{ 
     opacity: 0.6; 
     border: 1px solid var(--color-principal-);
 }
 
+/* Estilo responsivo para pantallas de menos de 768px */
 @media screen and (max-width : 768px){
     .imagenprincipal>img{
         visibility: hidden;
@@ -162,6 +182,7 @@ article>figure{
     }
 }
 
+/* Estilo responsivo para pantallas entre 768px y 1200px */
 @media screen and (min-width : 768px) and (max-width : 1200px){
     
 }

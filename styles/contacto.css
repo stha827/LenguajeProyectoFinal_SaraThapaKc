@@ -1,0 +1,126 @@
+/* Variables CSS */
+:root{
+  --color-principal-: #655ec9;
+}
+
+/* Diseño general del main interno */
+.maininterno{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Diseño de la letra del formulario */
+article>form>label{
+    font-size: 20px;
+  }
+
+/* Diseño de la parte de arriba del main interno */
+.partearriba{
+  display: flex;
+  width: 80vw;
+  height: 35.25vh;
+}
+
+.partearriba>article{
+  width: 100vw;
+  border-radius: 25px;
+  margin-top: 2vw;
+  justify-items: center;
+  align-items: center;
+}
+
+.partearriba>article{
+  width: 100vw;
+  border-radius: 25px;
+  margin-top: 2vw;
+}
+
+.partearriba>article>form>section>article>input{
+  margin-top: 0.5vh;
+  width: 15vw;
+  text-align: center;
+  color:var(--color-principal-);
+  height: 2vh;
+  border: 0px;
+  border-bottom: 2px solid var(--color-principal-);
+  color: var(--color-principal-);
+  background-color: black;
+  margin-top: 1.5vw;
+  font-size: 16px;
+}
+
+.partearriba>article>form>section>article>label{
+  font-size: 20px;
+}
+
+.partearriba>article>form>section>article{
+  width: 25vw;
+}
+
+.partearriba>article>form>section{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.partearriba>article>form{
+  text-align: center;
+}
+
+#recopilardatos{
+  width: 1vw;
+}
+
+/* Diseño de la parte de abajo del main interno */
+.parteabajo>article{
+  border-radius: 25px;
+  margin-top: 2vw;
+  align-items: center;
+  justify-items: center;
+}
+
+.parteabajo>article>form{
+  text-align: center;
+}
+
+.parteabajo>article>form>textarea{
+  margin-top: 2vh;
+  font-size: 16px;
+  color:var(--color-principal-);
+}
+
+/* Diseño de los botones */
+.boton{
+  background-color: var(--color-principal-);
+  color: white;
+  width: 10vw;
+  height: 4vh;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.boton:hover{
+  background-color: #262266;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Diseño de cada tipo de recopilación de datos */
+.datospersonales{
+  margin: 1vw;
+}
+
+.aficiones{
+  margin: 1.5vw;
+}
+
+.preguntas{
+  margin: 1vw;
+}
+
+.sugerencias{
+  margin: 1.5vw;
+}

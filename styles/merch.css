@@ -4,6 +4,15 @@
 
 main {
     height: 130vh;
+    width: 99.3vw;
+}
+
+header{
+    width: 99.3vw;
+}
+
+nav{
+    width: 99.3vw;
 }
 
 figure {
@@ -117,6 +126,7 @@ footer{
     text-align: center;
     display: block;
     height: 10vh;
+    width: 99.3vw;
 }
 footer>p>a{
     color: rgb(96, 96, 96);
