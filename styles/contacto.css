@@ -12,7 +12,7 @@
 }
 
 /* Diseño de la letra del formulario */
-article>form>label{
+article>label{
     font-size: 20px;
   }
 
@@ -31,7 +31,7 @@ article>form>label{
   align-items: center;
 }
 
-.partearriba>article>form>section>article>input{
+.partearriba>article>section>article>input{
   margin-top: 0.5vh;
   width: 15vw;
   text-align: center;
@@ -45,21 +45,21 @@ article>form>label{
   font-size: 16px;
 }
 
-.partearriba>article>form>section>article>label{
+.partearriba>article>section>article>label{
   font-size: 20px;
 }
 
-.partearriba>article>form>section>article{
+.partearriba>article>section>article{
   width: 25vw;
 }
 
-.partearriba>article>form>section{
+.partearriba>article>section{
   display: flex;
   justify-items: center;
   align-items: center;
 }
 
-.partearriba>article>form{
+.partearriba>article{
   text-align: center;
 }
 
@@ -145,7 +145,6 @@ article>form>label{
 
   .parteabajo>article>textarea {
     width: 80%;
-    height: 120px;
   }
 
   .boton {

@@ -13,58 +13,60 @@
   
   /* Diseño de la letra del formulario */
   article>form>label{
-      font-size: 20px;
-    }
+    font-size: 20px;
+  }
   
   /* Diseño de la parte de arriba del main interno */
   .partearriba{
     display: flex;
     width: 80vw;
-    height: 35.25vh;
+    height: auto;
+    flex-direction: column;
   }
   
   .partearriba>article{
-    width: 100vw;
+    width: 100%;
     border-radius: 25px;
     margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
   }
   
-  .partearriba>article>form>section>article>input{
+  .partearriba>article>section>article>input,
+  .partearriba>article>section>article>select{
     margin-top: 0.5vh;
-    width: 15vw;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
-    color:var(--color-principal-);
-    height: 2vh;
+    color: var(--color-principal-);
+    height: 2.5vh;
     border: 0px;
     border-bottom: 2px solid var(--color-principal-);
-    color: var(--color-principal-);
     background-color: black;
-    margin-top: 1.5vw;
     font-size: 16px;
   }
   
-  .partearriba>article>form>section>article>label{
+  .partearriba>article>section>article>label{
     font-size: 20px;
   }
   
-  .partearriba>article>form>section>article{
-    width: 25vw;
+  .partearriba>article>section>article{
+    width: 100%;
+    margin-top: 10px;
   }
   
-  .partearriba>article>form>section{
+  .partearriba>article>section{
     display: flex;
     justify-items: center;
     align-items: center;
+    flex-wrap: wrap;
   }
   
-  .partearriba>article>form{
+  .partearriba>article{
     text-align: center;
-  }
-  
-  #recopilardatos{
-    width: 1vw;
+    width: 100%;
   }
   
   /* Diseño de la parte de abajo del main interno */
@@ -79,7 +81,10 @@
   .parteabajo>article>textarea{
     margin-top: 1vh;
     font-size: 16px;
-    color:var(--color-principal-);
+    color: var(--color-principal-);
+    width: 80%;
+    height: 120px;
+    padding: 10px;
   }
   
   /* Diseño de los botones */
@@ -91,12 +96,12 @@
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
+    margin-top: 10px;
   }
   
   .boton:hover{
     background-color: #262266;
     color: black;
-    border-radius: 5px;
   }
   
   /* Diseño de cada tipo de recopilación de datos */
@@ -118,7 +123,6 @@
   
   /* Estilos responsive */
   @media (max-width: 1200px) {
-    /* Ajustes para dispositivos móviles y tablets */
     main{
       width: 100%;
     }
@@ -145,7 +149,6 @@
   
     .parteabajo>article>textarea {
       width: 80%;
-      height: 120px;
     }
   
     .boton {
@@ -157,5 +160,4 @@
       font-size: 18px;
     }
   }
-  
   

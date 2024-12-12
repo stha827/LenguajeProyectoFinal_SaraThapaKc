@@ -35,61 +35,60 @@
     <!-- Sección principal del sitio -->
     <main>
         <main class="maininterno">
-            <!-- Formulario de datos personales -->
-                    <!-- Vamos a añadir el formulario que almacenará los datos personales de los usuarios -->
-                    <section class="partearriba">
-                        <article>
-                        <form class="datospersonales" action="./gracias.html" target method=”post”>
-                           <h1> Deja tu Reseña: </h1>
-                            <section>
-                                <article> 
-                                    <label for="nombre"> Nombre: </label>
-                                    <input type="text" id="nombre" name="nombre" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+">
-                                </article>  
-                                <article> 
-                                    <label for="apellido">Apellido:</label>
-                                    <input type="text" id="apellido" name="apellido" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+[A-ZÁÉÍÓÚÑÇ]*[a-záéíóúñç\s]*"> <br>
-                                </article>  
-                            </section>
-                            <section>
-                                <article> 
-                                    <label for="pais">País:</label>
-                                    <input type="text" id="pais" name="pais" required pattern="[A-ZÁÉÍÓÚ][a-záéíóúñ]+(\s?[A-Z][a-záéíóúñ]+)*"> <br>
-                                </article> 
-                                <article> 
-                                    <label for="correo">Correo electrónico:</label>
-                                    <input type="email" id="correo" name="correo" required pattern="[a-z0-9]+[a-z0-9_\.]+@[a-z0-9]+\.[a-z0-9]+(\.?[a-z0-9]+)*"> <br>
-                                </article> 
-                            </section>
-                            <section>
-                                <article> 
-                                    <label for="pais">Califica el producto: </label>
-                                    <select id="rating" name="calificacion" required>
-                                        <option value="">Seleccione una calificación</option>
-                                        <option value="1">1 estrella</option>
-                                        <option value="2">2 estrellas</option>
-                                        <option value="3">3 estrellas</option>
-                                        <option value="4">4 estrellas</option>
-                                        <option value="5">5 estrellas</option>
-                                    </select>
-                                </article> 
-                            </section>
-                        </article>
-                    </section>
-            <!-- Formulario de sugerencias -->
-            <section class="parteabajo">
-                <article>
-                    <!-- Creamos un formulario para que el usuario nos añada sugerencias si lo desea -->
-                    <label for="sugerencias"> Reseña </label> <br>
-                    <textarea id="sugerencias" name="sugerencias" rows="11" cols="60" placeholder="Deja tu opinión sobre el producto aquí..." required></textarea><br>
-                        
-                    <br><input type="checkbox" id="recopilardatos" name="recopilardatos" required value="Aceptar">
-                    <label for="recopilardatos"> Acepta los <a href="./terminosylicencias.html"> términos de licencia </a> </label><br>
-
-                    <br><input type="submit" value="Enviar" class="boton">
-                </article>
-            </section>
-        </form>
+            <form class="datospersonales" action="./gracias.html" target method=”post”>
+                <section class="partearriba">
+                    <article>
+                        <h1>Deja tu Reseña</h1>
+                        <section>
+                            <article>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+">
+                            </article>
+                            <article>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+">
+                            </article>
+                        </section>
+            
+                        <section>
+                            <article>
+                                <label for="pais">País:</label>
+                                <input type="text" id="pais" name="pais" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+">
+                            </article>
+                            <article>
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" required pattern="[a-z0-9]+[a-z0-9_\.]+@[a-z0-9]+\.[a-z0-9]+(\.?[a-z0-9]+)*">
+                            </article>
+                        </section>
+            
+                        <section>
+                            <article>
+                                <label for="rating">Califica el producto:</label>
+                                <select id="rating" name="calificacion" required>
+                                    <option value="">Seleccione una calificación</option>
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </article>
+                        </section>
+                    </article>
+                </section>
+            
+                <!-- Formulario de sugerencias -->
+                <section class="parteabajo">
+                    <article>
+                        <textarea id="sugerencias" name="sugerencias" rows="11" cols="60" placeholder="Deja tu opinión sobre el producto aquí..." required></textarea><br>
+            
+                        <input type="checkbox" id="recopilardatos" name="recopilardatos" required>
+                        <label for="recopilardatos">Acepta los <a href="./terminosylicencias.html">términos de licencia</a></label><br>
+            
+                        <input type="submit" value="Enviar" class="boton">
+                    </article>
+                </section>
+            </form>
         </main>
     </main>
 

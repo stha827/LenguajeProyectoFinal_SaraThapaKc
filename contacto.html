@@ -36,76 +36,76 @@
     <main>
         <main class="maininterno">
             <!-- Formulario de datos personales -->
-                    <!-- Vamos a añadir el formulario que almacenará los datos personales de los usuarios -->
-                    <section class="partearriba">
-                        <article>
-                        <form class="datospersonales" action="./gracias.html" target method=”post”>
-                            <section>
-                                <article> 
-                                    <label for="nombre"> Nombre: </label>
-                                    <input type="text" id="nombre" name="nombre" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+">
-                                </article>  
-                                <article> 
-                                    <label for="apellido">Apellido:</label>
-                                    <input type="text" id="apellido" name="apellido" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+[A-ZÁÉÍÓÚÑÇ]*[a-záéíóúñç\s]*"> <br>
-                                </article>  
-                            </section>
-                            <section>         
-                                <article> 
-                                    <label for="direccion">Dirección:</label>
-                                    <input type="text" id="direccion" name="direccion" required pattern="^[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]*(?:[.,;/-]?\s?[A-ZÁÉÍÓÚÑÇa-záéíóúñç]+)+\s?[0-9]+(?:[A-Za-zÁÉÍÓÚÑÇa-záéíóúñç\s]*)$">
-                                </article> 
-                                <article> 
-                                    <label for="cpostal">Código postal:</label>
-                                    <input type="number" id="cpostal" name="cpostal" required pattern="[0-9]{3,8}"> <br>
-                                </article> 
-                            </section>
-                            <section> 
-                                <article> 
-                                    <label for="ciudad">Ciudad:</label>
-                                    <input type="text" id="ciudad" name="ciudad" required pattern="[A-Z][a-z]+(\s?[A-ZÁÉÍÓÚÇ][a-záéíóúñç]+)*">
-                                </article> 
-                                <article> 
-                                    <label for="pais">País:</label>
-                                    <input type="text" id="pais" name="pais" required pattern="[A-ZÁÉÍÓÚ][a-záéíóúñ]+(\s?[A-Z][a-záéíóúñ]+)*"> <br>
-                                </article> 
-                            </section>
-                            <section> 
-                                <article> 
-                                    <label for="telefono">Teléfono:</label>
-                                    <input type="tel" id="telefono" name="telefono" value="+" required pattern="\+([0-9]-?[0-9]{0,3})\s[0-9]{7,10}"> 
-                                </article> 
-                                <article> 
-                                    <label for="correo">Correo electrónico:</label>
-                                    <input type="email" id="correo" name="correo" required pattern="[a-z0-9]+[a-z0-9_\.]+@[a-z0-9]+\.[a-z0-9]+(\.?[a-z0-9]+)*"> <br>
-                                </article> 
-                            </section>
-                            <section> 
-                                <article> 
-                                    <label for="telefono">Edad:</label>
-                                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{1,2}"> 
-                                </article> 
-                                <article> 
-                                    <label for="correo"> Canción favorita:</label>
-                                    <input type="text" id="apellido" name="apellido" pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+[A-ZÁÉÍÓÚÑÇ]*[a-záéíóúñç\s]*"> <br>
-                                </article> 
-                            </section>
-                        </article>
-                    </section>
-            <!-- Formulario de sugerencias -->
-            <section class="parteabajo">
-                <article>
-                    <!-- Creamos un formulario para que el usuario nos añada sugerencias si lo desea -->
-                    <label for="sugerencias"> Problemas </label> <br>
-                    <textarea id="sugerencias" name="sugerencias" rows="11" cols="60" placeholder="Indica tu duda aquí..." required></textarea><br>
+            <!-- Vamos a añadir el formulario que almacenará los datos personales de los usuarios -->
+            <form class="datospersonales" action="./gracias.html" method="post">
+                <section class="partearriba">
+                    <article>
+                        <section>
+                            <article> 
+                                <label for="nombre"> Nombre: </label>
+                                <input type="text" id="nombre" name="nombre" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+">
+                            </article>  
+                            <article> 
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+[A-ZÁÉÍÓÚÑÇ]*[a-záéíóúñç\s]*"> <br>
+                            </article>  
+                        </section>
+                        <section>         
+                            <article> 
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" id="direccion" name="direccion" required pattern="^[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]*(?:[.,;/-]?\s?[A-ZÁÉÍÓÚÑÇa-záéíóúñç]+)+\s?[0-9]+(?:[A-Za-zÁÉÍÓÚÑÇa-záéíóúñç\s]*)$">
+                            </article> 
+                            <article> 
+                                <label for="cpostal">Código postal:</label>
+                                <input type="number" id="cpostal" name="cpostal" required pattern="[0-9]{3,8}"> <br>
+                            </article> 
+                        </section>
+                        <section> 
+                            <article> 
+                                <label for="ciudad">Ciudad:</label>
+                                <input type="text" id="ciudad" name="ciudad" required pattern="[A-Z][a-z]+(\s?[A-ZÁÉÍÓÚÇ][a-záéíóúñç]+)*">
+                            </article> 
+                            <article> 
+                                <label for="pais">País:</label>
+                                <input type="text" id="pais" name="pais" required pattern="[A-ZÁÉÍÓÚ][a-záéíóúñ]+(\s?[A-Z][a-záéíóúñ]+)*"> <br>
+                            </article> 
+                        </section>
+                        <section> 
+                            <article> 
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" value="+" required pattern="\+([0-9]-?[0-9]{0,3})\s[0-9]{7,10}"> 
+                            </article> 
+                            <article> 
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" required pattern="[a-z0-9]+[a-z0-9_\.]+@[a-z0-9]+\.[a-z0-9]+(\.?[a-z0-9]+)*"> <br>
+                            </article> 
+                        </section>
+                        <section> 
+                            <article> 
+                                <label for="telefono">Edad:</label>
+                                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{1,2}"> 
+                            </article> 
+                            <article> 
+                                <label for="correo"> Canción favorita:</label>
+                                <input type="text" id="apellido" name="apellido" pattern="[A-ZÁÉÍÓÚÑÇ][a-záéíóúñç\s]+[A-ZÁÉÍÓÚÑÇ]*[a-záéíóúñç\s]*"> <br>
+                            </article> 
+                        </section>
+                    </article>
+                </section>
+                <!-- Formulario de sugerencias -->
+                <section class="parteabajo">
+                    <article>
+                        <!-- Creamos un formulario para que el usuario nos añada sugerencias si lo desea -->
+                        <label for="sugerencias"> Problemas </label> <br>
+                        <textarea id="sugerencias" name="sugerencias" rows="9" cols="80" placeholder="Indica tu duda aquí..." required></textarea><br>
                         
-                    <br><input type="checkbox" id="recopilardatos" name="recopilardatos" required value="Aceptar">
-                    <label for="recopilardatos"> Acepta los <a href="./terminosylicencias.html"> términos de licencia </a> </label><br>
+                        <br><input type="checkbox" id="recopilardatos" name="recopilardatos" required value="Aceptar">
+                        <label for="recopilardatos"> Acepta los <a href="./terminosylicencias.html"> términos de licencia </a> </label><br>
 
-                    <br><input type="submit" value="Enviar" class="boton">
-                </article>
-            </section>
-        </form>
+                        <br><input type="submit" value="Enviar" class="boton">
+                    </article>
+                </section>
+            </form>
         </main>
     </main>
 
