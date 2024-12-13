@@ -1,20 +1,16 @@
+/* Indicamos el estilo del main */
 main{
     text-align: center;
     width: 100%;
 }
-header{
-    width: 100%;
-}
 
-nav{
-    width: 100%;
-}
-
+/* Indicamos el estilo del h2 */
 main>h2{
    margin: 2vw;
    font-size: 1.5rem;
 }
 
+/* Indicamos el estilo del texto general */
 main>p{
     margin: 1vw;
 }

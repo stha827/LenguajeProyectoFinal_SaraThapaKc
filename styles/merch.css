@@ -1,20 +1,20 @@
 /* Configuración de main */
 main {
     height: 130vh;
-    width: 99.29vw;
+    width: 100%;
 }
 
 /* Configuración de header */
 header{
-    width: 99.29vw;
+    width: 100%;
 }
 
 /* Configuración de la barra de navegación */
 nav{
-    width: 99.29vw;
+    width: 100%;
 }
 
-/* Estilo de las figuras, centrándolas y haciendo su posición relativa */
+/* Estilo de las figuras*/
 figure {
     justify-content: center;
     align-items: center;
@@ -22,7 +22,6 @@ figure {
     position: relative;
 }
 
-/* Estilo de las imágenes dentro de las figuras */
 figure>img{
     width: 27vw;
 }
@@ -32,7 +31,7 @@ figure>img{
     display: flex;
 }
 
-/* Estilo de los artículos dentro de la parte superior */
+/* Estilo de los artículos dentro de la parte superior, junto a sus secciones */
 .partearriba>article {
     width: 33.3vw;
     height: 55vh;
@@ -40,7 +39,12 @@ figure>img{
     align-items: center;
 }
 
-/* Estilo de las imágenes dentro de los artículos de la parte superior */
+.partearriba>article>p {
+    text-align: center;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
+
 .partearriba>article>section>img{
     width: 27vw;
 }
@@ -61,18 +65,12 @@ figure>img{
     display: block;
 }
 
-/* Estilo de los párrafos dentro de los artículos de la parte superior */
-.partearriba>article>p {
-    text-align: center;
-}
-
-/* Estilo de la parte inferior */
+/* Estilo de la parte de abajo */
 .parteabajo{
     margin-top: 8vh;
     display: flex;
 }
 
-/* Estilo de los artículos dentro de la parte inferior */
 .parteabajo>article {
     width: 33.3vw;
     height: 55vh;
@@ -80,10 +78,6 @@ figure>img{
     align-items: center;
 }
 
-/* Estilo de las imágenes dentro de los artículos de la parte inferior */
-.parteabajo>article>figure>img {
-    width: 27vw;
-}
 
 /* Estilo de los enlaces dentro de las figuras de los artículos de la parte inferior, ocultos por defecto */
 .parteabajo>article>figure>a {
@@ -96,26 +90,26 @@ figure>img{
     text-decoration: none;
 }
 
-/* Estilo de los enlaces dentro de las figuras de los artículos de la parte inferior al hacer hover */
 .parteabajo>article>figure:hover>a {
     display: block;
 }
 
-/* Estilo de los párrafos dentro de los artículos de la parte superior con animación */
+.parteabajo>article>figure>img {
+    width: 27vw;
+}
+
+/* Estilo de los párrafos dentro de los artículos de la parte inferior y superior con animación */
+.parteabajo>article>p {
+    text-align: center;
+    animation-duration: 5s;
+    animation: cambiarColor 3s forwards;
+}
 .partearriba>article>p {
     text-align: center;
     animation-duration: 5s;
     animation: cambiarColor 3s forwards;
 }
 
-/* Estilo de los párrafos dentro de los artículos de la parte inferior con animación */
-.parteabajo>article>p {
-    text-align: center;
-    animation-duration: 5s;
-    animation: cambiarColor 3s forwards;
-}
-
-/* Animación para cambiar el color del texto */
 @keyframes cambiarColor {
     0% { color: var(--color-principal-); }
     100% { color: #ffffff; }
@@ -144,7 +138,7 @@ footer{
     text-align: center;
     display: block;
     height: 10vh;
-    width: 99.29vw;
+    width: 100%;
 }
 
 /* Estilo de los enlaces dentro del pie de página */
@@ -153,24 +147,14 @@ footer>p>a{
 }
 
 /* Estilo responsivo para pantallas de menos de 767px */
-/* Estilo responsivo para pantallas de menos de 767px */
 @media screen and (max-width: 767px) {
+    /* Ajustamos el main */
     main {
         height: auto;
         width: 100%;
     }
-    header {
-        width: 100%;
-    }
 
-    nav {
-        width: 100%;
-    }
-
-    footer {
-        width: 100%;
-    }
-
+    /* Ajustamos la parte de arriba */
     .partearriba {
         flex-direction: column;
     }
@@ -178,41 +162,43 @@ footer>p>a{
     .partearriba>article {
         width: 90%;
         height: auto;
+        margin-left: 8vw;
     }
 
     .partearriba>article>figure>img {
-        width: 100%;
+        width: 90%;
     }
 
+    /* Ajustamos la parte de abajo */
     .parteabajo {
         flex-direction: column;
     }
 
     .parteabajo>article {
-        width: 90%;
+        width: 87%;
         height: auto;
+        margin-left: 8vw;
     }
 
     .parteabajo>article>figure>img {
         width: 100%;
+    }
+
+    /* Ajustamos el final de un articulo en concreto */
+    .abajofinal{
+        margin-bottom: 3vh;
     }
 }
 
 /* Estilo responsivo para pantallas entre 768px y 1200px */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* Ajustamos el main */
     main {
         height: auto;
         width: 100%;
     }
 
-    header {
-        width: 100%;
-    }
-
-    nav {
-        width: 100%;
-    }
-
+    /* Ajustamos la parte de arriba */
     .partearriba {
         flex-direction: row;
         flex-wrap: wrap;
@@ -229,6 +215,7 @@ footer>p>a{
         width: 90%;
     }
 
+    /* Ajustamos la parte de abajo */
     .parteabajo {
         flex-direction: row;
         flex-wrap: wrap;
@@ -244,4 +231,10 @@ footer>p>a{
     .parteabajo>article>figure>img {
         width: 90%;
     }
+
+    /* Ajustamos el final de un articulo en concreto */
+    .abajofinal{
+        margin-bottom: 3vh;
+    }
+
 }

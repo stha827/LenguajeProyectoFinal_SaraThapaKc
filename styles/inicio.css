@@ -41,13 +41,13 @@ main{
 
 /* Estilo de la flecha hacia abajo */
 .flecha_abajo{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     margin-left: 48%;
     margin-top: 45%;
-    animation-name: abajo;  
+    animation-name: abajo;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
@@ -60,7 +60,7 @@ main{
 /* Animación de la flecha hacia abajo */
 @keyframes abajo {
     0%   {left:0px; top:0px;}
-    100% {left:0px; top:15px;}  
+    100% {left:0px; top:15px;}
 }
 
 /* Estilo del contenedor de los enlaces de escucha */
@@ -75,28 +75,28 @@ main{
 }
 
 /* Estilo del enlace a Spotify */
-.spotify{ 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: auto; 
+.spotify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
-    
-.spotify:hover { 
-    opacity: 0.3; 
+
+.spotify:hover {
+    opacity: 0.3;
 }
 
 /* Estilo del enlace a YouTube */
-.youtube { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: auto; 
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     margin-left: 0.5vw;
-} 
-    
-.youtube:hover { 
-    opacity: 0.3; 
+}
+
+.youtube:hover {
+    opacity: 0.3;
 }
 
 /* Estilo de la sección */
@@ -104,7 +104,7 @@ section{
     display: flex;
 }
 
-/* Estilo del artículo */
+/* Estilos del artículo */
 article{
     width: 50vw;
 }
@@ -118,6 +118,7 @@ article>h3{
     text-align: center;
     letter-spacing: 2px;
 }
+
 article>p{
     text-align: center;
 }
@@ -129,111 +130,146 @@ article>figure{
 }
 
 article>figure>img{
-    width:30vw;
+    width: 30vw;
 }
+
 article>a>img{
     width: 2vw;
 }
 
 /* Estilo de los enlaces a redes sociales */
-.redes{ 
+.redes{
     border: 1px solid white;
     width: 20vw;
     height: 6vh;
     border-radius: 15px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     text-decoration: none;
 }
 
-.redes:hover{ 
-    opacity: 0.6; 
+.redes:hover{
+    opacity: 0.6;
     border: 1px solid var(--color-principal-);
 }
 
+/* RESPONSIVE */
 /* Estilo responsivo para pantallas de menos de 768px */
-@media screen and (max-width : 768px){
+@media screen and (max-width: 768px){
+    /* Ocultamos la imagen principal y mostramos la del móvil */
     .imagenprincipal>img{
         display: none;
     }
+
     .imagenprincipalmovil{
         visibility: visible;
-        display:block;
+        display: block;
     }
+
     .imagenprincipalmovil>img{
         width: 99%;
     }
+
+    /* Indicamos estilo de la flecha */
     .flecha_abajo{
         margin-left: 46%;
         margin-top: 70%;
     }
+
     .flecha_abajo>img{
         width: 10vw;
         height: auto;
     }
+
+    /* Indicamos estilo del main */
     main{
         width: 100%;
         height: 100%;
     }
+
+    /* Indicamos estilo de la sección */
     section{
         display: block;
     }
+
+    /* Indicamos estilos de los artículos */
     article{
         width: 100%;
     }
+
     article>figure>img{
         width: 60%;
     }
+
     article>p{
         text-align: center;
         font-size: 1rem;
     }
+
+    article>a>img{
+        width: 3vw;
+    }
+
+    /* Indicamos los estilos de Spotify y Youtube */
     .escuchar{
         display: flex;
         margin: auto;
     }
+
     .escuchar>a>img{
         width: 5vw;
         height: auto;
     }
-    .redes{ 
+
+    /* Indicamos el estilo de las redes */
+    .redes{
         width: 50vw;
         height: 5vh;
-    }
-    article>a>img{
-        width: 3vw;
     }
 }
 
 /* Estilo responsivo para pantallas entre 768px y 1200px */
-@media screen and (min-width : 768px) and (max-width : 1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    /* Indicamos estilo de la flecha */
     .flecha_abajo{
         margin-left: 45vw;
     }
+
+    /* Indicamos estilo del main */
     main{
         width: 100%;
         height: 100%;
     }
+
+    /* Indicamos estilo de las secciones */
     section{
         display: block;
     }
+
+    /* Indicamos estilo de los artículos */
     article{
         width: 99%;
     }
+
     article>figure>img{
         width: 60vw;
     }
+
     article>p{
         text-align: center;
         font-size: 1.5rem;
     }
+
+    /* Indicamos los estilos de Spotify y Youtube */
     .escuchar{
         display: flex;
         margin: auto;
     }
-    .redes{ 
+
+    /* Indicamos el estilo de las redes */
+    .redes{
         width: 50vw;
         height: 5vh;
     }

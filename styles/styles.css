@@ -23,13 +23,13 @@ header{
     width: 100vw;
     z-index: 1;
 }
+
 header>img{ 
     height: auto;
     width: 15vw;
 }
 
 /* Estilo de la navegación */
-
 nav{
     align-items: center;
     display: flex;
@@ -41,6 +41,7 @@ nav{
     z-index: 1;
     width: 100vw;
 }
+
 nav>p{
     width: 8vw;
     font-size: 1rem; 
@@ -51,6 +52,8 @@ nav>p>a{
     color: inherit;
     text-decoration: inherit;
 }
+
+/* Indicamos el estilo del texto de la navegación al pasar el ratón por encima */
 nav>p>a:hover{
     color: var(--color-principal-);
     text-decoration: underline;
@@ -75,7 +78,7 @@ footer>p{
     color: rgb(67, 67, 67);
 }
 
-/* Estilos de la barra de desplazamiento */
+/* Estilos de la barra de desplazamiento del navegador*/
 html {
     scrollbar-width: thin; 
     scrollbar-color: #d8d8d8 #2f0056; 
@@ -83,6 +86,7 @@ html {
 
 /* Estilos responsivos para pantallas de menos de 768px */
 @media screen and (max-width : 768px){
+    /* Cambiamos el header */
     header{
         width: 100%;
     }
@@ -90,6 +94,7 @@ html {
         height: auto;
         width: 35vw;
     }
+    /* Cambiamos la navegación y hacemos que esta se pueda mover*/
     nav{
         width: 100%;
         align-items: center;

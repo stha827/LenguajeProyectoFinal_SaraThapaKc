@@ -12,26 +12,33 @@
 }
 
 /* Diseño de la letra del formulario */
-article>label{
-    font-size: 20px;
-  }
+label{
+  font-size: 20px;
+}
 
 /* Diseño de la parte de arriba del main interno */
 .partearriba{
-  display: flex;
-  width: 80vw;
-  height: 35.25vh;
-}
-
-.partearriba>article{
   width: 100vw;
   border-radius: 25px;
   margin-top: 2vw;
   justify-items: center;
   align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 35.25vh;
 }
 
-.partearriba>article>section>article>input{
+.partearriba>section{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.partearriba>section>article{
+  width: 25vw;
+}
+
+.partearriba>section>article>input{
   margin-top: 0.5vh;
   width: 15vw;
   text-align: center;
@@ -45,32 +52,13 @@ article>label{
   font-size: 16px;
 }
 
-.partearriba>article>section>article>label{
-  font-size: 20px;
-}
-
-.partearriba>article>section>article{
-  width: 25vw;
-}
-
-.partearriba>article>section{
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-.partearriba>article{
-  text-align: center;
-}
-
-#recopilardatos{
-  width: 1vw;
+.partearriba>section>article>label{
+  font-size: 1.05rem;
 }
 
 /* Diseño de la parte de abajo del main interno */
 .parteabajo>article{
   border-radius: 25px;
-  margin-top: 2vw;
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -99,28 +87,12 @@ article>label{
   border-radius: 5px;
 }
 
-/* Diseño de cada tipo de recopilación de datos */
-.datospersonales{
-  margin: 1vw;
-}
-
-.aficiones{
-  margin: 1.5vw;
-}
-
-.preguntas{
-  margin: 1vw;
-}
-
-.sugerencias{
-  margin: 1.5vw;
-}
-
 /* Estilos responsive */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   /* Ajustes para dispositivos móviles y tablets */
   main{
     width: 100%;
+    height: 100vh;
   }
 
   header{
@@ -131,16 +103,24 @@ article>label{
     width: 100%;
   }
 
-  .partearriba>article>form>section>article>input {
-    width: 80%;
+  .partearriba {
+    width: 100%;
   }
 
-  .partearriba>article>form>section>article {
-    width: 80%;
+  .partearriba>section{
+    flex-direction: column;
+  }
+  
+  .partearriba>section>article {
+    width: 100%;
   }
 
-  .partearriba>article {
-    width: 90%;
+  .partearriba>section>article>input {
+    width: 50%;
+  }
+
+  .parteabajo {
+    margin-top: 3vh;
   }
 
   .parteabajo>article>textarea {
@@ -150,10 +130,48 @@ article>label{
   .boton {
     width: 80%;
   }
-
-  /* Ajusta el texto de los labels */
-  article>form>label {
-    font-size: 18px;
-  }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Ajustes para dispositivos móviles y tablets */
+  main{
+    width: 100%;
+    height: 100vh;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  .partearriba {
+    width: 100%;
+  }
+
+  .partearriba>section{
+    flex-direction: column;
+  }
+  
+  .partearriba>section>article {
+    width: 100%;
+  }
+
+  .partearriba>section>article>input {
+    width: 50%;
+  }
+
+  .parteabajo {
+    margin-top: 12vh;
+  }
+
+  .parteabajo>article>textarea {
+    width: 80%;
+  }
+
+  .boton {
+    width: 80%;
+  }
+}

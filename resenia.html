@@ -35,9 +35,9 @@
     <!-- Sección principal del sitio -->
     <main>
         <main class="maininterno">
+            <!-- Creamos el formulario el cual tendrá los distintos tipos de datos divididos en secciones que queremos recoger -->
             <form class="datospersonales" action="./gracias.html" target method=”post”>
                 <section class="partearriba">
-                    <article>
                         <h1>Deja tu Reseña</h1>
                         <section>
                             <article>
@@ -63,7 +63,7 @@
             
                         <section>
                             <article>
-                                <label for="rating">Califica el producto:</label>
+                                <br><br><label for="rating">Califica el producto:</label>
                                 <select id="rating" name="calificacion" required>
                                     <option value="">Seleccione una calificación</option>
                                     <option value="1">1 estrella</option>
@@ -74,19 +74,16 @@
                                 </select>
                             </article>
                         </section>
-                    </article>
                 </section>
             
                 <!-- Formulario de sugerencias -->
                 <section class="parteabajo">
-                    <article>
                         <textarea id="sugerencias" name="sugerencias" rows="11" cols="60" placeholder="Deja tu opinión sobre el producto aquí..." required></textarea><br>
             
                         <input type="checkbox" id="recopilardatos" name="recopilardatos" required>
                         <label for="recopilardatos">Acepta los <a href="./terminosylicencias.html">términos de licencia</a></label><br>
             
                         <input type="submit" value="Enviar" class="boton">
-                    </article>
                 </section>
             </form>
         </main>

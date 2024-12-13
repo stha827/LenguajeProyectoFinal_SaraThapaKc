@@ -1,3 +1,4 @@
+/* Indicamos el estilo del main */
 main{
     display: flex;
     align-items: center;
@@ -5,6 +6,7 @@ main{
     flex-direction: column;
 }
 
+/* Indicamos el estilo de los encabezados y su animación */
 h1{
     font-size: 120px;
     animation-duration: 5s;

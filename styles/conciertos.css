@@ -112,31 +112,29 @@ article{
     color: var(--color-principal-);
 }
 
+
+/* RESPONSIVE */
+/* Para móvil */
 @media (max-width: 768px) {
+    /* Indicamos estilo del main */
     main{
         width: 97.97%;
         height: 100%;
     }
-
-    header{
-        width: 100%;
-    }
-
-    nav{
-        width: 100%;
-    }
     
+    /* Indicamos estilo del main  interno*/
     .maininterno {
         flex-direction: column;
         align-items: center;
         padding: 0 2vw;
     }
 
+    /* Indicamos estilo de las secciones*/
     section {
         width: 90%;
     }
 
-
+    /* Indicamos estilo de los artículos */
     article {
         width: 90%;
         display: flex;
@@ -144,13 +142,14 @@ article{
         justify-content: center;
     }
 
-
+    /* Indicamos estilo del apartado de futuro */
     .futuro>a>img {
-        width: 4vw;
-        height: 3.5vh;
+        width: 3.5vw;
+        height: 3.2vh;
         margin-top: 0vh;
     }
 
+    /* Indicamos estilo de los botones */
     .botonestilo {
         width: 30%;
         text-align: center;
@@ -158,14 +157,18 @@ article{
     }
 }
 
+/* Para tablet */
 @media screen and (min-width : 768px) and (max-width : 1200px){
+    /* Indicamos estilo del botón */
     .botonestilo {
         font-size: 16px;
         text-align: center;
     }
+
+    /* Indicamos estilo del apartado de futuro */
     .futuro>a>img {
         width: 2vw;
-        height: 2vh;
+        height: 3vh;
     }
 }
 

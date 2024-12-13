@@ -18,12 +18,12 @@ main{
 
 /* Configuración del header para que ocupe casi toda la anchura */
 header{
-    width: 99.3vw;
+    width: 100vw;
 }
 
 /* Configuración de la barra de navegación para que ocupe casi toda la anchura */
 nav{
-    width: 99.3vw;
+    width: 100vw;
 }
 
 /* Utiliza flexbox para alinear elementos en una columna centrada con un pequeño margen superior */
@@ -90,41 +90,8 @@ article>img {
 }
 
 /* Estilos responsivos dependiendo del tamaño de la pantalla */
-@media (max-width: 768px) {
-    main{
-        height: 100%;
-    }
-    section {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-
-    article {
-        width: 60vw;
-        border-radius: 15px;
-        padding: 1.5vw;
-        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
-        transition: transform 0.3s, box-shadow 0.3s;
-        height: 45vh;
-        margin-bottom: 2vh;
-    }
-
-    article>img {
-        max-width: 70%;
-    }
-    .arriba>aside>h3 {
-        font-size: 1rem;
-    }
-
-    .arriba>aside>p {
-        font-size: 1rem;
-    }
-    
-}
-
 @media (max-width : 400px){
+    /* Ajustamos los artículos */
     article {
         width: 60vw;
         border-radius: 15px;
@@ -137,6 +104,7 @@ article>img {
 }
 
 @media (min-width : 400px) and (max-width : 570px){
+    /* Ajustamos los artículos */
     article {
         width: 60vw;
         border-radius: 15px;
@@ -149,15 +117,30 @@ article>img {
 }
 
 @media screen and (min-width : 570px) and (max-width : 768px) {
+    /* Ajustamos las imágenes */
     article>img {
         width: 60%;
     }
 }
 
-@media screen and (min-width : 768px) and (max-width : 1200px) {
+@media (max-width: 768px) {
+    /* Ajustamos el main */
     main{
+        width: 98%;
         height: 100%;
     }
+    
+    /* Ajustamos el header */
+    header{
+        width: 100%;
+    }
+
+    /* Ajustamos el nav */
+    nav{
+        width: 100%;
+    }
+
+    /* Ajustamos las secciones para que estas sean columnas */
     section {
         flex-direction: column;
         align-items: center;
@@ -165,6 +148,48 @@ article>img {
         gap: 1.5rem;
     }
 
+    /* Ajustamos cada artículo */
+    article {
+        width: 60vw;
+        border-radius: 15px;
+        padding: 1.5vw;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 45vh;
+        margin-bottom: 2vh;
+    }
+
+    article>img {
+        max-width: 38%;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1200px) {
+    /* Ajustamos el main */
+    main{
+        width: 98%;
+        height: 100%;
+    }
+    
+    /* Ajustamos el header */
+    header{
+        width: 100%;
+    }
+    
+    /* Ajustamos el nav */
+    nav{
+        width: 100%;
+    }
+    
+    /* Ajustamos las secciones */
+    section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    /* Ajustamos los artículos */
     article {
         width: 60vw;
         border-radius: 15px;
@@ -177,12 +202,6 @@ article>img {
 
     article>img {
         max-width: 25%;
-    }
-    .arriba>aside>h3 {
-        font-size: 1.5rem;
-    }
-
-    .arriba>aside>p {
-        font-size: 1.2rem;
+        height: 45%;
     }
 }
