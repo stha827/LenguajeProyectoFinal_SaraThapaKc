@@ -43,8 +43,8 @@ nav{
 }
 nav>p{
     width: 8vw;
-    font-size: 1em; 
-    padding: 0 1vw;
+    font-size: 1rem; 
+    padding: 0 2vw;
 }
 
 nav>p>a{
@@ -83,11 +83,15 @@ html {
 
 /* Estilos responsivos para pantallas de menos de 768px */
 @media screen and (max-width : 768px){
+    header{
+        width: 100%;
+    }
     header>img{ 
         height: auto;
         width: 35vw;
     }
     nav{
+        width: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
