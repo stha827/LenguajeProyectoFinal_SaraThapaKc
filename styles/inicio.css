@@ -39,6 +39,15 @@ main{
     display: none;
 }
 
+.bajar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 46%;
+    margin-top: 25%;
+}
+
 /* Estilo de la flecha hacia abajo */
 .flecha_abajo{
     display: flex;
